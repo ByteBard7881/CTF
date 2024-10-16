@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-container {
+  width: 55vw;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: black;
+  border-radius: 2.5vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 100vw;
+  background: linear-gradient(#00ccff, #d500f9);
+  animation: rotate 4s linear infinite;
+  z-index: 1;
+}
+
+.home-container::after {
+  content: "";
+  position: absolute;
+  background: black;
+  inset: 5px;
+  border-radius: 2.5vw;
+  z-index: 2;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-form {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+
+.home-form-1 {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-form-1 h1 {
+  font-family: "Nosifer", sans-serif;
+  font-size: 4vw;
+}
+
+.home-form-button {
+  appearance: none;
+  background-color: #40404F;
+  border: 2px solid #40404F;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+  height: 20%;
+  will-change: transform;
+}
+
+.home-form-button:disabled {
+  pointer-events: none;
+}
+
+.home-form-button:hover {
+  box-shadow: #0047AB 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.home-form-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

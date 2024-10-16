@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.win-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-image {
+  height: 100%;
+  width: 100%;
+  background: url("../assets/win.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-dialog {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.win-dialog-box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  font-family: "Protest Strike", sans-serif;
+  color: #eceff1;
+}
+
+.win-text {
+  height: 100%;
+  width: 100%;
+  padding: 2vw;
+  font-size: 2.7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-dialog-box:nth-child(2) {
+  padding: 1.5vw;
+}
+
+.qr {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/qr.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.momoi {
+  width: 100%;
+  height: 100%;
+  padding: 2vw;
+  background: url("../assets/momoi.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
