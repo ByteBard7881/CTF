@@ -18,7 +18,7 @@ function Reverse() {
     const token1 =
       "What is the method used to prevent Cross-Site Request Forgery (CSRF) attacks in web applications?";
 
-    if (inputValue === token1) {
+    if (inputValue.trim() === token1.trim()) {
       navigate("/reverse/verify");
     } else {
       alert("Wrong Key 💀😂");
